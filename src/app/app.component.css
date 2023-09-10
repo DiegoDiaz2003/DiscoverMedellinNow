@@ -1,0 +1,44 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.barra-navegacion {
+    width: 20%;
+    /* Ancho de la barra de navegación */
+    height: 100%;
+    float: left;
+    /* Coloca la barra de navegación a la izquierda */
+    background-color: #bcadf7;
+    
+}
+
+.izquierda {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    font-size: 25px;
+    background-color: #e3e2dd;
+    border-radius: 25px;
+    border-right: 7px solid #e3e2dd;
+    text-align: center;
+}
+h2{
+    color: #0189c7;
+}
+.boton{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.derecha {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.imagen{
+    margin-bottom: 20px;
+}
