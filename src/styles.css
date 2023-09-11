@@ -37,3 +37,7 @@ body,html {
     border-radius: 5px;
     border: 1px solid #0189c7;
 }
+.boton:hover {
+    background-color: #00c6fd;
+    border: #00c6fd;
+}
