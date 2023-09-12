@@ -1,0 +1,79 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.izquierda {
+    height: 100vh;
+    float: left;
+    font-size: 25px;
+    background-color: #e3e2dd;
+    border-radius: 25px;
+    border-right: 7px solid #e3e2dd;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.izquierda h2 {
+    color: #0189c7;
+}
+
+.boton {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 140px;
+    margin-top: -8px;
+}
+
+.derecha {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.imagen {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.texto-card {
+    margin-left: 20px;
+}
+
+.derecha h1 {
+    font-size: 25px;
+    color: #0189c7;
+    margin-left: 80px;
+}
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.carta img {
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: -130px;
+}
+
+.carta {
+    margin-left: 55px;
+    width: 102%;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
