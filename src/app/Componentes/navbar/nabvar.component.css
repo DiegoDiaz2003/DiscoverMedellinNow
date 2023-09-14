@@ -50,8 +50,9 @@ body {
 .logo h2 {
     font-size: 1.15rem;
     font-weight: 600;
-    margin-left: 15px;
+    margin-left: 10px;
     display: none;
+    color: white;
 }
 
 .sidebar:hover .logo h2 {
@@ -82,33 +83,13 @@ body {
     background: #00c6fd;
 }
 
-.links h4 {
-    color: #222;
-    font-weight: 500;
-    display: none;
-    margin-bottom: 10px;
-}
-
-.sidebar:hover .links h4 {
-    display: block;
-}
-
-.links hr {
-    margin: 10px 8px;
-    border: 1px solid #4c4c4c;
-}
-
-.sidebar:hover .links hr {
-    border-color: transparent;
-}
-
 .links li span {
     padding: 12px 10px;
 }
 
 .links li a {
     padding: 10px;
-    color: #000;
+    color: white;
     display: none;
     font-weight: 500;
     white-space: nowrap;
@@ -124,5 +105,18 @@ body {
 }
 i{
     align-items: end;
+    color: white;
     
+}
+
+hr{
+    margin-top: 150px;
+}
+@media (max-width: 768px) {
+    .sidebar{
+        width: 70px;
+    }
+    .logo img {
+        width: 90px;
+    }
 }

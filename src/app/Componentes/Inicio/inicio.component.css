@@ -12,7 +12,7 @@ html {
 }
 
 .izquierda {
-    height: 100vh;
+    height: auto;
     float: left;
     font-size: 25px;
     background-color: #e3e2dd;
@@ -76,4 +76,49 @@ html {
 a {
     text-decoration: none;
     color: black;
+}
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        grid-template-columns: 1fr; 
+    }
+    .izquierda,.derecha {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+        overflow-y: auto;
+    }
+    .izquierda{
+        border-radius: 0px;
+    }
+    .izquierda h2 {
+        font-size: 24px;
+        margin-left: 80px;
+    }
+    .izquierda p{
+        font-size: 19px;
+        margin-left: 80px;
+    }
+    .imagen {
+        width: 300px;
+        height: 300px;
+        margin-left: 65px;
+    }
+    .boton{
+        margin-left: 160px;
+    }
+    .derecha h1 {
+        font-size: 24px;
+        margin-left: 85px;
+    }
+    .carta {
+        margin-left:80px;
+        width: 82%;
+    }
+    .carta img {
+        width: 150px;
+        height: 150px;
+        margin-left: 40px;
+        margin-top: -50px;
+    }
 }
