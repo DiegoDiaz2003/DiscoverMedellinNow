@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -7,6 +8,14 @@ import { Component } from "@angular/core";
     styleUrls: ['./restaurante.component.css']
 })
 
-export class RestauranteComponent {
-    
+export class RestauranteComponent implements OnInit {
+    data: any;
+
+    constructor(private http: HttpClient) {}
+
+    ngOnInit(): void {
+      this.http.get('/src/app/componentes/restaurante').subscribe((response) => {
+        this.data = response;
+      });
+    }
 }
