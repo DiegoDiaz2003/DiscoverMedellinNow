@@ -1,5 +1,3 @@
-/* Importing Google font - Poppins */
-
 
 * {
     margin: 0;
@@ -10,7 +8,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-color: rgb(191, 191, 231);
+    background-color: #B3B6B7;
     background-position: center;
     background-size: cover;
 }
@@ -19,12 +17,12 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 90px;
+    width: 5%;
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #0189c7;
+    background: #212F3D;
     backdrop-filter: blur(17px);
     --webkit-backdrop-filter: blur(17px);
     border-right: 1px solid rgba(255, 255, 255, 0.7);
@@ -36,14 +34,14 @@ body {
 }
 
 .sidebar .logo {
-    color: #000;
     display: flex;
     align-items: center;
     padding: 25px 10px 15px;
 }
 
 .logo img {
-    width: 120px;
+    width: 100%;
+    max-width: 150px;
     border-radius: 50%;
 }
 
@@ -103,6 +101,7 @@ body {
 .links .logout-link {
     margin-top: 20px;
 }
+
 i{
     align-items: end;
     color: white;
@@ -111,12 +110,4 @@ i{
 
 hr{
     margin-top: 150px;
-}
-@media (max-width: 768px) {
-    .sidebar{
-        width: 70px;
-    }
-    .logo img {
-        width: 90px;
-    }
 }

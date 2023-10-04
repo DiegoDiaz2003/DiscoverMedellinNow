@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DMN</title>
-    <link rel="stylesheet" href="inicio.component.css">
-</head>
+    <link rel="stylesheet" href="inicio.component.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- barra de navegación -->
     <app-navbar></app-navbar>
-    <div class="container">
-        <div class="izquierda">
-            <h2>Discover Medellin Now</h2>
-            <p>Conoce y disfruta Medellín sin <br>necesidad de terceros</p>
-            <img class="imagen" src="../../assets/imagenes/medellin .png" alt="Mi Imagen">
-            <button class="boton"><a href=""></a>Comienza la <br>aventura</button>
-        </div>
 
-        <div class="derecha">
-            <h1>¿Qué hay pa hacer?</h1>
-            <div class="cartas">
-                <a routerLink="/restaurante">
-                    <div class="carta"
-                        style=" background-color: #fbcb8d; border-radius: 8px; border: 1px solid #fbcb8d;">
-                        <div class="texto-card">
-                            <h2>Restaurantes</h2>
-                            <p>"Con hambre, no hay pan duro"</p>
-                        </div>
-                        <img src="../../assets/imagenes/bandejapaisa .png" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="carta"
-                        style=" background-color: #00c6fd; border-radius: 8px; border: 1px solid #00c6fd;">
-                        <div class="texto-card">
-                            <h2>Atracciones</h2>
-                            <p>"Metale chancleta"</p>
-                        </div>
-                        <img src="../../assets/imagenes/pueblitopaisa .png" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="carta"
-                        style=" background-color: #fbcb8d; border-radius: 8px; border: 1px solid #fbcb8d;">
-                        <div class="texto-card">
-                            <h2>Actividades</h2>
-                            <p>"#dasd"</p>
-                        </div>
-                        <img src="../../assets/imagenes/discoteca.png" alt="">
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="carta"
-                        style=" background-color: #00c6fd; border-radius: 8px; border: 1px solid #00c6fd;">
-                        <div class="texto-card">
-                            <h2>Transporte</h2>
-                            <p>""</p>
-                        </div>
-                        <img src="../../assets/imagenes/mapa.png" alt="">
-                    </div>
-                </a>
+    <main>
+      <section class="containerLeft">
+        <h1>Discover Medellin Now</h1>
+        <p>Conoce y disfruta Medellín sin <br />necesidad de terceros</p>
+        <div class="containerImgButton">
+          <img
+            class="imagen"
+            src="../../assets/imagenes/medellin .png"
+            alt="Mi Imagen"
+          />
+          <a href="">Comienza la aventura</a>
+        </div>
+      </section>
+
+      <section class="containerRight">
+        <h1>¿Qué hay pa hacer?</h1>
+        <div class="cartas">
+          <div class="carta blue">
+            <div class="texto-card">
+              <a routerLink="/restaurantes">Restaurantes</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
+            <img src="../../assets/imagenes/bandejapaisa .png" alt="" />
+          </div>
+          <div class="carta blue">
+            <div class="texto-card">
+              <a routerLink="/restaurantes">Atracciones</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="../../assets/imagenes/pueblitopaisa .png" alt="" />
+          </div>
+          <div class="carta">
+            <div class="texto-card">
+              <a routerLink="/restaurantes">Actividades</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="../../assets/imagenes/discoteca.png" alt="" />
+          </div>
+          <div class="carta">
+            <div class="texto-card">
+              <a routerLink="/restaurantes">Trabajo</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="../../assets/imagenes/mapa.png" alt="" />
+          </div>
         </div>
-    </div>
-
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>
