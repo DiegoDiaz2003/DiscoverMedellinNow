@@ -1,50 +1,114 @@
-<!-- barra de navegación -->
-<app-navbar></app-navbar>
-
-<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://revistadiners.com.co/wp-content/uploads/2022/04/portada_romero_1200x800_2022-1024x683.jpg"
-                class="d-block carousel-img" alt="..." width="1000px" height="450px">
-        </div>
-        <div class="carousel-item">
-            <img src="https://bocao.com.do/uploads/img30-08-2016-1260499514.png"
-                class="d-block carousel-img" alt="..." width="1000px" height="450px">
-        </div>
-        <div class="carousel-item">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/89/ea/c5/a-feast-at-mondongo-poblado.jpg"
-                class="d-block carousel-img" alt="..." width="1000px" height="450px">
-        </div>
-    </div>
-    <button class="carousel-control-prev control-p" type="button" data-bs-target="#carouselExampleRide"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next control-n" type="button" data-bs-target="#carouselExampleRide"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-<hr>
-<h1>¿Que quieres comer?</h1>
-
-<div class="buscar">
-    <input type="text" placeholder="Buscar">
-    <div class="btn_buscar"><i class="fa-solid fa-magnifying-glass"></i></div>
-</div>
-<h2>Nuestros restaurantes</h2>
-
-<!--<div class="row row-cols-1 row-cols-md-4 g-6  tarjetas">
-    <div class="col" *ngFor="let dato of datos">
-        <div class="card">
-            <img [src]="dato.imagen" class="card-img-top" alt="Imagen de {{ dato.name }}">
-            <div class="card-body">
-                <h5 class="card-title">{{ dato.name }}</h5>
-                <p class="card-text">{{ dato.score }}</p> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante</title>
+  </head>
+  <body>
+    <app-navbar></app-navbar>
+    <main class="container">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://revistadiners.com.co/wp-content/uploads/2022/04/portada_romero_1200x800_2022-1024x683.jpg"
+                        class="d-block carousel-img" alt="..." width="1000px" height="450px">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://bocao.com.do/uploads/img30-08-2016-1260499514.png"
+                        class="d-block carousel-img" alt="..." width="1000px" height="450px">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/89/ea/c5/a-feast-at-mondongo-poblado.jpg"
+                        class="d-block carousel-img" alt="..." width="1000px" height="450px">
+                </div>
             </div>
+            <button class="carousel-control-prev control-p" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next control-n" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </div>
-</div>
--->
+
+      <section class="best-food-container">
+        <h1 class="title-best-food">Weekly special</h1>
+        <div class="best-food-sub-container">
+          <div class="best-food-individual">
+            <div class="image-container">
+              <img
+                class="hamburger-image"
+                src="../../../assets/imagenes/Restaurante/Picada de Morcilla.png"
+                alt="HotDog"
+              />
+            </div>
+            <div class="info-container">
+              <h1 class="title">BurgerManía</h1>
+              <p class="paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente veritatis sequi commodi numquam similique error,
+                officia totam dolorum, ratione corrupti vel, itaque nulla
+              </p>
+            </div>
+          </div>
+          <div class="best-food-individual">
+            <div class="image-container">
+              <img
+                class="hamburger-image"
+                src="../../../assets/imagenes/Restaurante/Picada de Morcilla.png"
+                alt="Pizza"
+              />
+            </div>
+            <div class="info-container">
+              <h1 class="title">BurgerManía</h1>
+              <p class="paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente veritatis sequi commodi numquam similique error,
+                officia totam dolorum, ratione corrupti vel, itaque nulla
+              </p>
+            </div>
+          </div>
+          <div class="best-food-individual">
+            <div class="image-container">
+              <img
+                class="hamburger-image"
+                src="../../../assets/imagenes/Restaurante/Picada de Morcilla.png"
+                alt="Pizza"
+              />
+            </div>
+            <div class="info-container">
+              <h1 class="title">BurgerManía</h1>
+              <p class="paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente veritatis sequi commodi numquam similique error,
+                officia totam dolorum, ratione corrupti vel, itaque nulla
+              </p>
+            </div>
+          </div>
+          <div class="best-food-individual">
+            <div class="image-container">
+              <img
+                class="hamburger-image"
+                src="../../../assets/imagenes/Restaurante/Picada de Morcilla.png"
+                alt="Pizza"
+              />
+            </div>
+            <div class="info-container">
+              <h1 class="title">BurgerManía</h1>
+              <p class="paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sapiente veritatis sequi commodi numquam similique error,
+                officia totam dolorum, ratione corrupti vel, itaque nulla
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

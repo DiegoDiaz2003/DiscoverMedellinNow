@@ -4,15 +4,15 @@ import { RestauranteComponent } from "./Componentes/restaurante/restaurante.comp
 import { InicioComponent } from "./Componentes/Inicio/inicio.component";
 import { atraccionesComponent } from './Componentes/atracciones/atracciones.component';
 import { MapaComponent } from './Componentes/mapa/mapa.component';
-
+import { ActividadesComponent } from './actividades/actividades.component';
 
 
 const routes: Routes = [
-  {path: '', component: InicioComponent},
+  {path: 'inicio', component: InicioComponent},
   {path: 'restaurante', component: RestauranteComponent},
   {path: 'atracciones', component: atraccionesComponent},
+  {path: 'actividades', component: ActividadesComponent},
   {path: 'mapa', component: MapaComponent},
-  
 ];
 
 @NgModule({

@@ -8,6 +8,7 @@ import { InicioComponent } from './Componentes/Inicio/inicio.component';
 import { MapaComponent } from './Componentes/mapa/mapa.component';
 import { atraccionesComponent } from "./Componentes/atracciones/atracciones.component";
 import { HttpClientModule } from '@angular/common/http';
+import { ActividadesComponent } from './actividades/actividades.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     InicioComponent,
     MapaComponent,
     atraccionesComponent,
+    ActividadesComponent,
   ],
   imports: [
     BrowserModule,

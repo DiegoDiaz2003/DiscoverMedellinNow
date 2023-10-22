@@ -1,118 +1,128 @@
-h1{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 1250px) {
+    main {
+      margin-top: 50%;
+      margin-bottom: 10%;
+    }
+}
+
+.best-food-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-best-food {
+    font-size: 50px;
     text-align: center;
-    color: #0189c7;
-    font-size: 35px;
-}
-h2{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 80px;
-}
-.carousel{
-    margin-top: 5px;
-    margin-left: 7cm;
-}
-hr{
-    height: 10px;
-    width: 50%;
-    margin-left: 10cm;
-    color: #f7197d;
-}
-.buscar{
-    position: absolute;
-    padding: 0px;
-    left: 42%;
-}
-.buscar input{
-    width: 240px;
-    height: 55px;
-    padding: 0 20px;
-    font-size: 18px;
-    color: black;
-    outline: none;
-    border: 1px solid gray;
-    border-radius: 50px;
-}
-.btn_buscar{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #0189c7;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.btn_buscar:hover {
-    background-color: #00c6fd;
-    font-size: 22px;
-}
-.card-img-top {
-    width: 215.1px;
-    height: 200px;
-    object-fit: cover;
-
-}
-.control-p {
-    margin-left: -60px;
+    margin-bottom: 60px;
+    color: #1D38B2;
 }
 
-.control-n {
-    margin-right: 40px;
-}
-@media (max-width: 600px) {
-    .carousel {
-        margin-left: 65px;
-    }
-
-    .carousel-inner {
-        width: 295px;
-        height: 300px;
-    }
-
-    .carousel-img {
-        width: 295px;
-        height: 300px;
-    }
-
-    h1 {
-        font-size: 30px;
-        margin-left: 65px;
-    }
-
-    h2 {
-        font-size: 28px;
-        margin-left: 65px;
-    }
-
-    .buscar {
-        margin-left: -15%;
-    }
-
-    .tarjetas .card {
-        margin-left: -20px;
-        max-width: 100%;
-    }
-
-    .control-p {
-        margin-left: -10px;
-    }
-
-    .control-n {
-        margin-right: 5px;
+@media (max-width: 500px) {
+    .title-best-food {
+        font-size: 10vw;
     }
 }
-@media (max-width: 600px){
-    .carousel-inner {
-        width: 313px;
-        height: 300px;
+
+.best-food-sub-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media (max-width: 900px) {
+    .best-food-sub-container {
+        flex-direction: column;
     }
-    .carousel-img {
-        width: 320px;
-        height: 300px;
+}
+
+.best-food-individual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    gap: 40px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+@media (max-width: 1300px) {
+    .best-food-individual {
+        max-width: 400px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    .best-food-individual {
+        padding: 10% 3%;
+    }
+}
+
+.hamburger-image {
+    width: 100%;
+    max-width: 200px;
+}
+
+@media (max-width: 1200px) {
+    .hamburger-image {
+        max-width: 260px;
+    }
+}
+
+.info-container {
+    max-width: 40%;
+}
+
+@media (max-width: 1300px) {
+    .info-container {
+        max-width: 80%;
+    }
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 100;
+    color: #1D38B2;
+    font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+    .title {
+        font-size: 35px;
+    }
+
+    @media (max-width: 500px) {
+        .title {
+            font-size: 8vw;
+        }
+    }
+}
+
+.paragraph {
+    font-size: 15px;
+}
+
+@media (max-width: 500px) {
+    .paragraph {
+        font-size: 4vw;
     }
 }
