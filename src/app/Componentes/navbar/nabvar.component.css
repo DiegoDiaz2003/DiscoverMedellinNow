@@ -1,10 +1,14 @@
 .navbar {
-    background: #E7EAF5;
+    background: #212F3D;
     padding: 1% 0;
 }
 
 .nav_container{
     width: 95%;
+
+}
+a{
+    color: #FBF9F1;
 }
 
 .navbar-collapse {
@@ -15,13 +19,22 @@
     width: 100%;
     max-width: 90px;
 }
+.dropdown-menu{
+    background-color: #212F3D;
+}
 
 .nav-link {
     font-size: 20px;
     transition: box-shadow 0.3s; 
     box-shadow: 0 2px transparent; 
+    background-color: #212F3D;
 }
-
+a:hover{
+    color: #B9B3B3;
+}
+.dropdown-item:hover{
+    background-color: aqua;
+}
 .nav-link:hover {
-    box-shadow: 0 2px 0 #2b2b2b; 
+    box-shadow: 0 2px 0 #B9B3B3; 
 }

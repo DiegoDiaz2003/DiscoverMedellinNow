@@ -4,17 +4,14 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiAttraction {
-  private apiUrl = 'http://127.0.0.1:8000';
+export class ApiActivity {
+  private apiUrl = 'https://api-activity-dmn.onrender.com';
 
   constructor(private http: HttpClient) {}
 
   getDatos() {
-    return this.http.get(`${this.apiUrl}/attraction/`);
+    return this.http.get(`${this.apiUrl}/activities/`);
   }
 
   // Agregar más métodos según tus necesidades
 }
-
-  
-

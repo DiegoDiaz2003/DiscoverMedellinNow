@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ApiActivity } from '../../services/atraccion_s/atraccion.service';
+import { ApiAttraction } from '../services/atraccion_s/atraccion.service';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class atraccionesComponent implements OnInit {
   datos: any;
 
-  constructor(private apiService: ApiActivity) {}
+  constructor(private apiService: ApiAttraction) {}
 
   ngOnInit() {
     this.apiService.getDatos().subscribe(data => {
