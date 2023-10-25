@@ -15,9 +15,7 @@ svg {
     top: 20;
     left: 0;
 }
-.datos{
-    margin-left: 120px;
-}
+
 h1 {
     text-align: center;
     color: #0189c7;
@@ -30,13 +28,16 @@ h2 {
     margin-top: 80px;
 }
 
+
 .carousel {
     margin-top: 5px;
     margin-left: 6cm;
     border-radius: 20px;
+    
 }
 .carousel-img{
     border-radius: 20px;
+    
 }
 
 
@@ -96,22 +97,14 @@ h2 {
 
 
 
-.slide-container {
-    margin-left: 80px;
-    max-width: 1120px;
-    width: 1000px;
-    padding: 40px 0;
+.row{
+    margin-top: 30px;
+    margin-left: 20px;
 }
-
-.slide-content {
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
-}
-
 .card {
     border-radius: 25px;
     background-color: #FFF;
+    margin-left: 20px;
 
 }
 
@@ -183,39 +176,6 @@ h2 {
     color: #707070;
     text-align: center;
 }
-
-.swiper-navBtn {
-    color: #6E93f7;
-    transition: color 0.3s ease;
-}
-
-.swiper-navBtn:hover {
-    color: #4070F4;
-}
-
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 35px;
-}
-
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-button-prev {
-    left: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color: #6E93f7;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #4070F4;
-}
-
-
 
 
 

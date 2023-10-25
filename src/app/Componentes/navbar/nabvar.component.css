@@ -1,6 +1,7 @@
 .navbar {
     background: #212F3D;
     padding: 1% 0;
+
 }
 
 .nav_container{
@@ -29,11 +30,14 @@ a{
     box-shadow: 0 2px transparent; 
     background-color: #212F3D;
 }
+.navbar-toggler{
+    background-color: #ffff;
+}
 a:hover{
     color: #B9B3B3;
 }
 .dropdown-item:hover{
-    background-color: aqua;
+    background-color: #4E6B88;
 }
 .nav-link:hover {
     box-shadow: 0 2px 0 #B9B3B3; 
