@@ -5,19 +5,17 @@ svg {
     left: 0;
     z-index: -1;
 }
-.container {
+.container_figura {
     display: inline-block;
     position: absolute;
     width: 100%;
     padding-bottom: 100%;
     vertical-align: middle;
     overflow: hidden;
-    top: 0;
+    top: 20;
     left: 0;
 }
-.datos{
-    margin-left: 120px;
-}
+
 h1 {
     text-align: center;
     color: #0189c7;
@@ -30,13 +28,16 @@ h2 {
     margin-top: 80px;
 }
 
+
 .carousel {
     margin-top: 5px;
     margin-left: 6cm;
     border-radius: 20px;
+    
 }
 .carousel-img{
     border-radius: 20px;
+    
 }
 
 
@@ -78,26 +79,134 @@ h2 {
     font-size: 22px;
 }
 
+
 .tarjetas{
     margin-left: 100px;
 }
+.tarjetas .card{
+    border: 1px solid #fff;
+}
+.tarjetas .card .imagen-box{
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+
+
+
+.row{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+    margin-left: 20px;
+
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212F3D;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #212F3D;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #212F3D;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
 .control-p{
     margin-left: -60px;
 }
 .control-n{
-    margin-right: 60px;
+    margin-right: 130px;
 }
+
+
+
+
+
 @media (max-width: 768px) {
     .carousel{
-        margin-left: 65px;
+        margin-left: 30px;
 
     }
     .carousel-inner{
-        width: 295px;
+        width: 320px;
         height: 300px;
     }
     .carousel-img{
-        width: 295px;
+        width: 320px;
         height: 300px;
     }
     h1{
@@ -122,4 +231,5 @@ h2 {
     .control-n {
         margin-right: 5px;
     }
+    
 }

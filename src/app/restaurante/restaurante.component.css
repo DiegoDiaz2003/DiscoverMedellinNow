@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 1250px) {
+    main {
+      margin-top: 50%;
+      margin-bottom: 10%;
+    }
+}
+
+.best-food-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-best-food {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #1D38B2;
+}
+
+@media (max-width: 500px) {
+    .title-best-food {
+        font-size: 10vw;
+    }
+}
+
+.best-food-sub-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media (max-width: 900px) {
+    .best-food-sub-container {
+        flex-direction: column;
+    }
+}
+
+.best-food-individual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    gap: 40px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+@media (max-width: 1300px) {
+    .best-food-individual {
+        max-width: 400px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    .best-food-individual {
+        padding: 10% 3%;
+    }
+}
+
+.hamburger-image {
+    width: 100%;
+    max-width: 200px;
+}
+
+@media (max-width: 1200px) {
+    .hamburger-image {
+        max-width: 260px;
+    }
+}
+
+.info-container {
+    max-width: 40%;
+}
+
+@media (max-width: 1300px) {
+    .info-container {
+        max-width: 80%;
+    }
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 100;
+    color: #1D38B2;
+    font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+    .title {
+        font-size: 35px;
+    }
+
+    @media (max-width: 500px) {
+        .title {
+            font-size: 8vw;
+        }
+    }
+}
+
+.paragraph {
+    font-size: 15px;
+}
+
+@media (max-width: 500px) {
+    .paragraph {
+        font-size: 4vw;
+    }
+}

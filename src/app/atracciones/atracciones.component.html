@@ -1,10 +1,10 @@
-<app-navbar></app-navbar>
+
 
 <div class="container_figura">
     <svg viewBox="0 0 340 400" preserveAspectRatio="xMinYMin meet">
-        <path d="M0, 100 C150, 190 350, 0 500, 280 L500, 00 L0, 0 Z" style="stroke:none; fill:#212F3D;"></path>
-    </svg>
-
+        <path d="M0, 100 C150, 240 350, 0 500, 290 L600, 00 L0, 0 Z" style="stroke:none; fill:#212F3D;"></path>
+</svg>
+<app-navbar></app-navbar>
 
 <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
     <div class="carousel-inner">
@@ -32,7 +32,7 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-<br><br><br>
+<br><br><br><br>
 <h1>¿Que quieres hacer?</h1>
 
 <div class="buscar">
@@ -41,18 +41,49 @@
 </div>
 <h2>Nuestras atracciones</h2>
 
-<div class="row row-cols-1 row-cols-md-4 g-6  tarjetas">
+<!--<div class="row row-cols-1 row-cols-md-4 g-6  tarjetas">
     <div class="col-12 my-2" *ngFor="let dato of datos">
         <div class="card">
-            <img [src]="dato.imagen" class="card-img-top" alt="Imagen de {{ dato.name }}">
+            <img class="imagen-box" [src]="dato.imagen" alt="Mi imagen">
             <div class="card-body">
-                <h5 class="card-title">{{ dato.name }}</h5>
-                <p class="card-text">{{ dato.score }}</p>
-                <!-- Puedes agregar más campos según la estructura de tus datos aquí -->
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <div><a class="boton" href=""><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></a></div>
             </div>
         </div>
     </div>
+</div>-->
+
+
+
+
+
+
+
+<div class="row row-cols-1 row-cols-md-5 g-1">
+        <div class="card" *ngFor="let dato of datos">
+        <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+                <img class="card-img" [src]="dato.imagen" alt="Mi imagen">
+            </div>
+        </div>
+        <div class="card-content">
+            <h2 class="name"><b>{{ dato.name | uppercase }}</b></h2>
+            <p class="description">{{ dato.description }}</p>
+            <p class="description"><i class="fa-solid fa-star" style="color: #ffea00;"></i>{{ dato.score }}</p>
+            <a class="boton" href="#">Ver mas</a>
+        </div>
+    </div>
 </div>
+
+
+
+
+
+
+
+
 
 
 

@@ -6,6 +6,7 @@ body,html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #e9eff5;
 }
 /* Works on Firefox */
 * {
@@ -39,10 +40,16 @@ body,html {
     font-size: 20px;
     border-radius: 5px;
     border: 1px solid #212F3D;
+    text-decoration: none;
+}
+.boton a{
+    text-decoration: none;
+    color: #ffff;
+    text-align: center;
 }
 .boton:hover {
-    background-color: #00c6fd;
-    border: #00c6fd;
+    background-color: #4E6B88;
+    border: #4E6B88;
 }
 
 @media (max-width: 768px) {
