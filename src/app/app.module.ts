@@ -4,11 +4,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RestauranteComponent } from './restaurante/restaurante.component';
 import { NavbarComponent } from './Componentes/navbar/nabvar.component';
+import { FormularioComponent } from './Componentes/formulario/formulario.component';
 import { InicioComponent } from './Inicio/inicio.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { atraccionesComponent } from "./atracciones/atracciones.component";
 import { HttpClientModule } from '@angular/common/http';
 import { ActividadesComponent } from './actividades/actividades.component';
+import { RegistroComponent } from './registro/registro.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -20,11 +24,14 @@ import { ActividadesComponent } from './actividades/actividades.component';
     MapaComponent,
     atraccionesComponent,
     ActividadesComponent,
+    FormularioComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

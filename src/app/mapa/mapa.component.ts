@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { environment } from 'src/environments/environment';
+import * as L from 'leaflet';
 
-declare var google: any;
 
 
 @Component({
@@ -10,38 +9,22 @@ declare var google: any;
     styleUrls: ['./mapa.component.css']
 })
 
-export class MapaComponent implements OnInit {
-  googleMapsApiKey = environment.googleMapsApiKey;
+export class MapaComponent implements OnInit{
+    map?: L.Map;
 
+    constructor() {
+    // Inicializa el mapa aquí
+  }
 
   ngOnInit() {
-    this.loadGoogleMapsScript(() => {
-      this.initializeMap();
-    });
-  }
+    if (this.map) {
+      this.map = L.map('map').setView([37.7749, -122.4194], 12);
 
-  loadGoogleMapsScript(callback: () => void) {
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${this.googleMapsApiKey}`;
-    script.onload = callback;
-    document.body.appendChild(script);
-  }
-
-
-  initializeMap() {
-    const center = { lat: 6.248805, lng: -75.574713 };
-
-    const mapOptions = {
-      center: center,
-      zoom: 10
-    };
-
-    const mapElement = document.getElementById('google-map');
-    if (mapElement) {
-      const map = new google.maps.Map(mapElement, mapOptions);
-    } else {
-      console.error('Element with ID "google-map" not found in the DOM.');
+      // Agrega la capa de MapQuest
+      L.tileLayer('https://www.mapquestapi.com/staticmap/v5/map?key=5LcgzHtXYEXdjAvJZRNILqMz37ECpY4W&center={center}&zoom={zoom}', {
+        maxZoom: 18,
+        attribution: 'MapQuest'
+      }).addTo(this.map);
     }
-
   }
 }
