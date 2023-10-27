@@ -12,8 +12,13 @@ export class ApiAttraction {
   getDatos() {
     return this.http.get(`${this.apiUrl}/attraction/`);
   }
+  
+ uploadImage(activityId: number, image: File) {
+  const formData = new FormData();
+  formData.append('image', image);
 
-  // Agregar más métodos según tus necesidades
+  return this.http.post(`${this.apiUrl}/api/activities/${activityId}/upload-image/`, formData);
+  }
 }
 
   
