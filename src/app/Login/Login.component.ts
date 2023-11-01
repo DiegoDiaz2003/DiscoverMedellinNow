@@ -8,14 +8,6 @@ import { HttpClient } from '@angular/common/http';
     styleUrls: ['./Login.component.css']
 })
 
-export class RestauranteComponent implements OnInit {
-    data: any;
-
-    constructor(private http: HttpClient) {}
-
-    ngOnInit(): void {
-      this.http.get('/src/app/componentes/Login').subscribe((response) => {
-        this.data = response;
-      });
-    }
+export class LoginComponent {
+    
 }

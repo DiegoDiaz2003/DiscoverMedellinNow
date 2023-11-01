@@ -6,6 +6,8 @@ import { atraccionesComponent } from './atracciones/atracciones.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { ActividadesComponent } from './actividades/actividades.component';
 import { RegistroComponent } from './registro/registro.component';
+import { LoginComponent } from './Login/Login.component';
+
 
 
 const routes: Routes = [
@@ -16,6 +18,7 @@ const routes: Routes = [
   {path: 'actividades', component: ActividadesComponent},
   {path: 'mapa', component: MapaComponent},
   {path: 'registro', component: RegistroComponent},
+  {path: 'login', component: LoginComponent},
 ];
 
 @NgModule({

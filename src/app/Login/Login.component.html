@@ -1,62 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Inicio de sesion </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Login.component.css" />
-</head>
-<body>
-    <div id="main-container">
-        <div id="left-container">
-            <form action="/">
-                <div id="logo-container">
-                    <img src="../../../assets/imagenes/login/DMN.png" width="600px" alt="">
-                </div> 
-                <div id="title-container">
-                    <h2> Bienvenidos </h2>
-                    <h2> Vamos a descubrir Medellin juntos! </h2>
-                </div>
-                <div id="login-social-container">
-                    <button type="button" class="btn-google">Continuar con Google</button>
-                </div>
-                <div id="separator-container">
-                    <div class="line"></div>
-                    <span> o continuar con Email </span>
-                    <div class="line"></div>
-                </div>
-                <div id="inputs-container">
-                    <label for="username">Nombre de Usuario</label>
-                    <input type="text" id="username" name="username">
+<app-navbar></app-navbar>
+<div id="main-container">
+    <div id="left-container">
+        <form action="/">
+            <div id="logo-container">
+                <img src="../../assets/imagenes/Login/DMN.png" width="600px" alt="">
+            </div>
+            <div id="title-container">
+                <h2> Bienvenidos </h2>
+                <h2> Vamos a descubrir Medellin juntos! </h2>
+            </div>
+            <div id="login-social-container">
+                <button class="btn-google"> Continuar con Google </button>
+            </div>
+            <div id="separator-container">
+                <div class="line"></div>
+                <span> o continuar con Email </span>
+                <div class="line"></div>
+            </div>
+            <div id="inputs-container">
+                <label for="username"> Nombre de Usuario </label>
+                <input type="text" name="username">
 
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password">
+                <label for="password"> Contrasenia </label>
+                <input type="password" name="password">
 
-                    <div id="options-container">
-                        <div>
-                            <input type="checkbox" id="stay-signed-in">
-                            <label for="stay-signed-in">Mantenerme conectado</label>
-                        </div>                                            
-                        <div class="right">
-                            <a href="#"> Olvide mi contrasenia </a>
-                        </div>
+                <div id="options-container">
+                    <div>
+                        <input type="checkbox" name="" id=""> Mantenerme conectado
                     </div>
-                    <div id="buttons-container">
-                        <input type="submit" class="btn" value=" Iniciar Sesion ">
+                    <div class="right">
+                        <a href="#"> Olvide mi contrasenia </a>
                     </div>
-
                 </div>
-                <div id="register-container">
-                    <span> Si no tienes una cuenta, </span> <a href="#"> Registrate! </a>
+                <div id="buttons-container">
+                    <input type="submit" class="btn" value=" Iniciar Sesion ">
                 </div>
-            </form>
-        </div>
-        <div id="right-container">
 
-        </div>
+            </div>
+            <div id="register-container">
+                <span> Si no tienes una cuenta, </span> <a href="#"> Registrate! </a>
+            </div>
+        </form>
     </div>
-</body>
-</html>
+    <div id="right-container">
+
+    </div>
+</div>

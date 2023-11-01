@@ -10,6 +10,7 @@ import { atraccionesComponent } from "./atracciones/atracciones.component";
 import { HttpClientModule } from '@angular/common/http';
 import { ActividadesComponent } from './actividades/actividades.component';
 import { RegistroComponent } from './registro/registro.component';
+import { LoginComponent } from './Login/Login.component';
 import { FormsModule } from '@angular/forms';
 
 
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     atraccionesComponent,
     ActividadesComponent,
     RegistroComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
