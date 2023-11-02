@@ -4,13 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RestauranteComponent } from './restaurante/restaurante.component';
 import { NavbarComponent } from './Componentes/navbar/nabvar.component';
-import { FormularioComponent } from './Componentes/formulario/formulario.component';
 import { InicioComponent } from './Inicio/inicio.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { atraccionesComponent } from "./atracciones/atracciones.component";
 import { HttpClientModule } from '@angular/common/http';
 import { ActividadesComponent } from './actividades/actividades.component';
 import { RegistroComponent } from './registro/registro.component';
+import { LoginComponent } from './Login/Login.component';
 import { FormsModule } from '@angular/forms';
 
 
@@ -24,8 +24,8 @@ import { FormsModule } from '@angular/forms';
     MapaComponent,
     atraccionesComponent,
     ActividadesComponent,
-    FormularioComponent,
     RegistroComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

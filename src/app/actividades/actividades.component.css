@@ -102,10 +102,15 @@ h2 {
 
 
 
+.row {
+    margin-top: 30px;
+    margin-left: 20px;
+}
 
-.card{
+.card {
     border-radius: 25px;
-    background-color: black;
+    background-color: #FFF;
+    margin-left: 20px;
 
 }
 
@@ -177,7 +182,6 @@ h2 {
     color: #707070;
     text-align: center;
 }
-
 
 
 
