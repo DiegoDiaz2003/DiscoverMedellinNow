@@ -7,6 +7,8 @@ import { MapaComponent } from './mapa/mapa.component';
 import { ActividadesComponent } from './actividades/actividades.component';
 import { RegistroComponent } from './registro/registro.component';
 import { LoginComponent } from './Login/Login.component';
+import { BandejaPaisaComponent } from './bandeja-paisa/bandeja-paisa.component';
+import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 
 
 
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path: 'mapa', component: MapaComponent},
   {path: 'registro', component: RegistroComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'bandeja-paisa', component: BandejaPaisaComponent},
+  {path: 'formulario-registro', component: FormularioRegistroComponent}
 ];
 
 @NgModule({

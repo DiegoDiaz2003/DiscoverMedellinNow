@@ -281,6 +281,11 @@ form {
     gap: 1vh;
 }
 
+.inputs-radio{
+    display: flex;
+    gap: 5%;
+}
+
 .inputs-container label {
     display: block;
     padding: 0.5rem 0;
@@ -330,17 +335,11 @@ form {
     border: 0;
     cursor: pointer;
     background: #15799A;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    color: #fff;
 }
 
 .boton:hover {
     background: #1AA9AF;
-}
-
-.register-container {
-    color: #CCCCCC;
-    padding: 1rem 0;
-    text-align: center;
 }

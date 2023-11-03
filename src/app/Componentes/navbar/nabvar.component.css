@@ -1,7 +1,10 @@
 .navbar {
     background: #212F3D;
     padding: 1% 0;
+}
 
+.backgroundTransparent{
+    background: transparent !important;
 }
 
 .nav_container{
@@ -28,7 +31,6 @@ a{
     font-size: 20px;
     transition: box-shadow 0.3s; 
     box-shadow: 0 2px transparent; 
-    background-color: #212F3D;
 }
 .navbar-toggler{
     background-color: #ffff;

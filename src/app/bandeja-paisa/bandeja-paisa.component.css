@@ -1,0 +1,300 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 5% 0;
+}
+
+.best-food-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-best-food {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 500px) {
+    .title-best-food {
+        font-size: 10vw;
+    }
+}
+
+.best-food-sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media (max-width: 900px) {
+    .best-food-sub-container {
+        flex-direction: column;
+    }
+}
+
+.best-food-individual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    gap: 40px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+@media (max-width: 1300px) {
+    .best-food-individual {
+        max-width: 400px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    .best-food-individual {
+        padding: 10% 3%;
+    }
+}
+
+.hamburger-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (max-width: 1200px) {
+    .hamburger-image {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hamburger-image {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    .hamburger-image {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 650px) {
+    .hamburger-image {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+    .hamburger-image {
+        max-width: 260px;
+    }
+}
+@media (max-width: 350px) {
+    .hamburger-image {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 250px) {
+    .hamburger-image {
+        max-width: 150px;
+    }
+}
+@media (max-width: 200px) {
+    .hamburger-image {
+        max-width: 100px;
+    }
+}
+
+.info-container {
+    max-width: 40%;
+}
+
+@media (max-width: 1300px) {
+    .info-container {
+        max-width: 80%;
+    }
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+@media (max-width: 1400px) {
+    .title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 8vw;
+    }
+}
+
+.paragraph {
+    font-size: 15px;
+}
+
+@media (max-width: 500px) {
+    .paragraph {
+        font-size: 4vw;
+    }
+}
+
+
+.container-cards{
+    padding: 5% 0;
+
+}
+
+.subcontainer-cards{
+    margin: 0 10%;
+    display: flex;
+    gap: 5vh 5vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-individual{
+    border-radius: 20px;
+    box-shadow: 10px 10px 76px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 76px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 76px -7px rgba(0,0,0,0.75);
+}
+
+
+.container-individual{
+    height: 50vh;
+}
+
+.image-individual{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    max-width: 350px;
+}
+
+.container-texts{
+    max-width: 350px;
+}
+
+.container-texts{
+    padding: 5%;
+}
+
+.title-image{
+    text-align: center;
+    font-weight: 900;
+}
+
+.title-nuestros-restaurantes {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin: 5vh 0;
+}
+
+@media (max-width: 1250px) {
+    .title-nuestros-restaurantes {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title-nuestros-restaurantes {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .title-nuestros-restaurantes {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-nuestros-restaurantes {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .title-nuestros-restaurantes {
+        font-size: 8vw;
+    }
+}
+
+.title-card {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 !important;
+    text-decoration-line: none;
+    color: #000;
+}
+
+@media (max-width: 1250px) {
+    .title-card {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title-card {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 750px) {
+    .title-card {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-card {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .title-card {
+        font-size: 6vw;
+    }
+}
+
+.description-post {
+    margin: 0 !important;
+    font-size: 18px;
+}
+
+@media (max-width: 1250px) {
+    .description-post {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .description-post {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .description-post {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .description-post {
+        font-size: 4vw;
+    }
+}

@@ -1,4 +1,7 @@
-<nav class="navbar navbar-expand-lg">
+<nav
+  class="navbar navbar-expand-lg"
+  [ngClass]="{ 'backgroundTransparent': isOnInicioPage }"
+>
   <div class="nav_container container-fluid">
     <img class="logo" src="../../../assets/imagenes/DMN.png" alt="" />
     <button
@@ -49,4 +52,11 @@
       </ul>
     </div>
   </div>
+
+  <script>
+    const inicioLink = document.querySelector('a[href="/inicio"]');
+    if (window.location.pathname === "/inicio") {
+      inicioLink.classList.add("active-class");
+    }
+  </script>
 </nav>
