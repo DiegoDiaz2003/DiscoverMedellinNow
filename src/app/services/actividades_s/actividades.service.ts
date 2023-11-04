@@ -16,5 +16,9 @@ export class ApiActivity {
     return this.http.get(`${this.apiUrl}/activities/`);
   }
 
-  // Agregar más métodos según tus necesidades
+   createActivity(formData: any) {
+    // Realiza una solicitud POST para crear una nueva actividad en la base de datos
+    return this.http.post(`${this.apiUrl}/activities/`, formData);
+  }
 }
+

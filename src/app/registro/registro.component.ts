@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { HttpClient  } from '@angular/common/http';
+import { ApiActivity } from "../services/actividades_s/actividades.service";
 
 @Component({
   selector: 'app-registro',
@@ -8,56 +9,45 @@ import { HttpClient  } from '@angular/common/http';
 })
 
 export class RegistroComponent {
-formData: { 
-    name: string, 
-    description: string, 
-    phone: string, 
-    address: string, 
-    website: string, 
-    openhour: string, 
-    closehour: string, 
-    price: string, 
-    sponsor: string, 
-    image: any 
-  } = {
-    name: "",
-    description: "",
-    phone: "",
-    address: "",
-    website: "",
-    openhour: "",
-    closehour: "",
-    price: "",
-    sponsor: "",
-    image: null
-  };
-   selectedFiles: File[] = [];
 
-   constructor(private http: HttpClient) {}
+  formData: FormData = new FormData();
 
-   onFileSelected(event: any) {
-       this.selectedFiles = event.target.files;
-   }
+//  formData: any = {
+    name: string = '';
+    phone: string ='';
+    indications: string = '';
+    website: string = '';
+    openhour: string = '';
+    closehour: string = '';
+    description: string = '';
+    price: string = '';
+    sponsor: string = '';
+    // Inicializa otros campos aquí
+//  };
 
-   onSubmit() {
-       const formData = new FormData();
+  constructor(private http: HttpClient) { }
+  
+  
+  onImageChange(event: any) {
+    const file = event.target.files[0];
+    if (file) {
+      this.formData.append('image', file, file.name);
+    }
+  }
+  submitForm() {
+    this.formData.append('name', this.name); 
+    this.formData.append('phone', this.phone);
+    this.formData.append('indications', this.indications);
+    this.formData.append('website', this.website);
+    this.formData.append('openhour', this.openhour);
+    this.formData.append('closehour', this.closehour);
+    this.formData.append('description', this.description);
+    this.formData.append('price', this.price);
+    this.formData.append('sponsor', this.sponsor);
 
-       // Agrega campos de texto al FormData
-       formData.append("name", this.formData.name);
-       formData.append("description", this.formData.description);
-
-       // Agrega imágenes al FormData
-       for (const file of this.selectedFiles) {
-           formData.append("image", file);
-       }
-
-       this.http.post("http://localhost:8000/upload-image/", formData).subscribe(
-           (response) => {
-               console.log("Imágenes cargadas con éxito", response);
-           },
-           (error) => {
-               console.error("Error al cargar las imágenes", error);
-           }
-       );
-   }
+    this.http.post('https://api-activity-dmn.onrender.com/activities/', this.formData)
+      .subscribe((response) => {
+        // Realizar acciones después de enviar los datos, como redireccionar o mostrar un mensaje de éxito.
+      });
+  }
 }
