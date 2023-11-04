@@ -1,46 +1,71 @@
 <app-navbar></app-navbar>
-<form (ngSubmit)="submitForm()" #myForm="ngForm">
-    <div class="form-group">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" [(ngModel)]="name" required>
-    </div>
-    <div class="form-group">
-        <label for="phone">Telefono:</label>
-        <input type="text" id="phone" name="phone" [(ngModel)]="phone" required>
-    </div>
-    <div class="form-group">
-        <label for="indications">Indicaciones:</label>
-        <input type="text" id="indications" name="indications" [(ngModel)]="indications" required>
-    </div>
-    <div class="form-group">
-        <label for="website">Sitio web:</label>
-        <input type="text" id="website" name="website" [(ngModel)]="website" required>
-    </div>
-    <div class="form-group">
-        <label for="openhour">Hora apertura:</label>
-        <input type="time" id="openhour" name="openhour" [(ngModel)]="openhour" required>
-    </div>
-    <div class="form-group">
-        <label for="closehour">Hora cierre:</label>
-        <input type="time" id="closehour" name="closehour" [(ngModel)]="closehour" required>
-    </div>
-    <div class="form-group">
-        <label for="description">Descripción:</label>
-        <textarea id="description" name="description" [(ngModel)]="description" required></textarea>
-    </div>
-    <div class="form-group">
-        <label for="price">Precio:</label>
-        <input type="text" id="price" name="price" [(ngModel)]="price" required>
-    </div>
-    <div class="form-group">
-        <label for="sponsor">Patrocinador:</label>
-        <input type="text" id="sponsor" name="sponsor" [(ngModel)]="sponsor" required>
-    </div>
-    <div class="form-group">
-        <label for="image">Imagen:</label>
-        <input type="file" id="image" name="image" (change)="onImageChange($event)" accept="image/*">
-    </div>
-    
-    
-    <button type="submit">Enviar</button>
-</form>
+<body>
+<br>
+<h1>Agregar nueva actividad</h1>
+<div class="formulario_actividades">
+    <form (ngSubmit)="submitForm()" #myForm="ngForm">
+        <div class="form-group form-row">
+            <div class="column">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" [(ngModel)]="name" required>
+            </div>
+            <div class="column">
+                <label for="phone">Telefono</label>
+                <input type="text" id="phone" name="phone" [(ngModel)]="phone" required>
+            </div>
+        </div>
+
+        <div class="form-group form-row">
+            <div class="column">
+                <label for="indications">Indicaciones</label>
+                <input type="text" id="indications" name="indications" [(ngModel)]="indications" required>
+            </div>
+            <div class="column">
+                <label for="website">Sitio web</label>
+                <input type="text" id="website" name="website" [(ngModel)]="website" required>
+            </div>
+        </div>
+
+        <div class="form-group form-row">
+            <div class="column">
+                <label for="openhour">Hora apertura</label>
+                <input type="time" id="openhour" name="openhour" [(ngModel)]="openhour" required>
+            </div>
+            <div class="column">
+                <label for="closehour">Hora cierre</label>
+                <input type="time" id="closehour" name="closehour" [(ngModel)]="closehour" required>
+            </div>
+        </div>
+
+        <div class="form-group form-row">
+            <div class="column">
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" [(ngModel)]="description" required></textarea>
+            </div>
+            <div class="column">
+                <label for="price">Precio</label>
+                <input type="text" id="price" name="price" [(ngModel)]="price" required>
+            </div>
+        </div>
+
+        <div class="form-group form-row">
+            <div class="column">
+                <label for="sponsor">Patrocinador</label>
+                <input type="text" id="sponsor" name="sponsor" [(ngModel)]="sponsor" required>
+            </div>
+            <div class="column">
+                <label for="image">Imagen</label>
+                <input type="file" id="image" name="image" (change)="onImageChange($event)" accept="image/*">
+            </div>
+        </div>
+        <button type="submit" class="boton">Agregar actividad</button>
+    </form>
+</div>
+
+<div id="circle"></div>
+<div id="circle2"></div>
+<div class="decoracion">
+    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/L5QC7AC7P5JURJOJDB7HSGXEBM.jpg" alt="">
+</div>
+
+</body>

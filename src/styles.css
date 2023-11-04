@@ -40,6 +40,7 @@ body,html {
     border-radius: 5px;
     border: 1px solid #212F3D;
     text-decoration: none;
+    color: #ffff;
 }
 .boton a{
     text-decoration: none;

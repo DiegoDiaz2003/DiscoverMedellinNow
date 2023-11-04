@@ -329,15 +329,12 @@ form {
     width: 100%;
     border: 0;
     cursor: pointer;
-    background: #15799A;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #fff;
 }
 
-.boton:hover {
-    background: #1AA9AF;
-}
+
 
 .register-container {
     color: #CCCCCC;
