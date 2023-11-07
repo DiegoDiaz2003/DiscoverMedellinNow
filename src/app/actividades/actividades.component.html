@@ -31,7 +31,7 @@
       </div>
     </div>
     <button
-      class="carousel-control-prev"
+      class="carousel-control-prev control-p"
       type="button"
       data-bs-target="#carouselExampleRide"
       data-bs-slide="prev"
@@ -40,7 +40,7 @@
       <span class="visually-hidden">Previous</span>
     </button>
     <button
-      class="carousel-control-next"
+      class="carousel-control-next control-n"
       type="button"
       data-bs-target="#carouselExampleRide"
       data-bs-slide="next"
@@ -60,21 +60,8 @@
     </div>
   </div>
   
- <div class="row row-cols-1 row-cols-md-4 g-6  tarjetas">
-    <div class="col-12 my-2" *ngFor="let dato of datos">
-        <div class="card">
-            <img class="imagen-box" [src]="dato.imagen" alt="Mi imagen">
-            <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text"></p>
-                <div><a class="boton" href=""><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></a></div>
-            </div>
-        </div>
-    </div>
-</div>
-
   <section>
-    <div class="containerIndividual">
+    <div class="containerIndividual"  *ngFor="let dato of datos">
       <div class="card">
         <div class="image-content">
           <span class="overlay"></span>
@@ -87,129 +74,15 @@
           </div>
         </div>
         <div class="card-content">
-          <h2 class="name"><b>xd</b></h2>
-          <p class="description">xd</p>
+          <h2 class="name"><b>{{ dato.name | uppercase }}</b></h2>
+          <p class="description">{{ dato.description }}</p>
           <p class="description">
-            <i class="fa-solid fa-star" style="color: #ffea00"></i>xs
+            <i class="fa-solid fa-star" style="color: #ffea00"></i>{{ dato.score }}
           </p>
           <a class="boton" href="/bandeja-paisa">Ver mas</a>
         </div>
       </div>
     </div>
 
-    <div class="containerIndividual">
-      <div class="card">
-        <div class="image-content">
-          <span class="overlay"></span>
-          <div class="card-image">
-            <img
-              class="card-img"
-              src="../../assets/imagenes/Restaurante/Picada de Morcilla.png"
-              alt="Mi imagen"
-            />
-          </div>
-        </div>
-        <div class="card-content">
-          <h2 class="name"><b>xd</b></h2>
-          <p class="description">xd</p>
-          <p class="description">
-            <i class="fa-solid fa-star" style="color: #ffea00"></i>xs
-          </p>
-          <a class="boton" href="#">Ver mas</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="containerIndividual">
-      <div class="card">
-        <div class="image-content">
-          <span class="overlay"></span>
-          <div class="card-image">
-            <img
-              class="card-img"
-              src="../../assets/imagenes/Restaurante/Restaurante 1.PNG"
-              alt="Mi imagen"
-            />
-          </div>
-        </div>
-        <div class="card-content">
-          <h2 class="name"><b>xd</b></h2>
-          <p class="description">xd</p>
-          <p class="description">
-            <i class="fa-solid fa-star" style="color: #ffea00"></i>xs
-          </p>
-          <a class="boton" href="#">Ver mas</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="containerIndividual">
-      <div class="card">
-        <div class="image-content">
-          <span class="overlay"></span>
-          <div class="card-image">
-            <img
-              class="card-img"
-              src="../../assets/imagenes/Restaurante/Restaurante2.PNG"
-              alt="Mi imagen"
-            />
-          </div>
-        </div>
-        <div class="card-content">
-          <h2 class="name"><b>xd</b></h2>
-          <p class="description">xd</p>
-          <p class="description">
-            <i class="fa-solid fa-star" style="color: #ffea00"></i>xs
-          </p>
-          <a class="boton" href="#">Ver mas</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="containerIndividual">
-      <div class="card">
-        <div class="image-content">
-          <span class="overlay"></span>
-          <div class="card-image">
-            <img
-              class="card-img"
-              src="../../assets/imagenes/Restaurante/Tazon Baby Beef.png"
-              alt="Mi imagen"
-            />
-          </div>
-        </div>
-        <div class="card-content">
-          <h2 class="name"><b>xd</b></h2>
-          <p class="description">xd</p>
-          <p class="description">
-            <i class="fa-solid fa-star" style="color: #ffea00"></i>xs
-          </p>
-          <a class="boton" href="#">Ver mas</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="containerIndividual">
-      <div class="card">
-        <div class="image-content">
-          <span class="overlay"></span>
-          <div class="card-image">
-            <img
-              class="card-img"
-              src="../../assets/imagenes/Restaurante/Tazon Paisa.png"
-              alt="Mi imagen"
-            />
-          </div>
-        </div>
-        <div class="card-content">
-          <h2 class="name"><b>xd</b></h2>
-          <p class="description">xd</p>
-          <p class="description">
-            <i class="fa-solid fa-star" style="color: #ffea00"></i>xs
-          </p>
-          <a class="boton" href="#">Ver mas</a>
-        </div>
-      </div>
-    </div>
   </section>
 </div>

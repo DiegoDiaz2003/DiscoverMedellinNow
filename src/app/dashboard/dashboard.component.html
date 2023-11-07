@@ -1,1 +1,20 @@
 <app-navbar></app-navbar>
+<body>
+<br>
+<a class="boton" href="registro">Agregar nueva actividad</a>
+<a class="boton" href="#">Agregar nueva atracción</a>
+<a class="boton" href="#">Agregar nuevo restaurante</a>
+<br><br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let dato of datos">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ dato.name | uppercase }}</h5>
+                <p class="card-text">{{ dato.description }}</p>
+                <a class="boton" href=""><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+                <a class="boton" href="" style="background-color: red; border: 1px solid red;" ><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

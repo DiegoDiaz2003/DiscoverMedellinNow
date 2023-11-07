@@ -18,7 +18,7 @@
 
 
 .carousel {
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 .carousel-img {
@@ -71,7 +71,7 @@ section{
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #0189c7;
+  background-color: #212f3d;
   width: 55px;
   height: 55px;
   line-height: 55px;
@@ -83,23 +83,11 @@ section{
 }
 
 .btn_buscar:hover {
-  background-color: #00c6fd;
+  background-color: #4E6B88;
   font-size: 22px;
 }
 
-/**.tarjetas{
-    margin-left: 100px;
-}
-.tarjetas .card{
-    border: 1px solid #fff;
-}
-.tarjetas .card .imagen-box{
-    width: 280px;
-    height: 280px;
-    border-radius: 10px;
-    margin-left: 15px;
-    margin-top: 12px;
-}**/
+
 
 .row {
   margin-top: 30px;
@@ -179,10 +167,13 @@ section{
   color: #707070;
   text-align: center;
 }
+.control-p {
+  margin-left: 125px;
+}
+.control-n {
+   margin-right: 130px;
+}
 
-.prev-icon, .next-icon {
-    color: black !important; 
-  }
 
 @media (max-width: 768px) {
   .carousel {

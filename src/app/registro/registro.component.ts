@@ -22,7 +22,7 @@ export class RegistroComponent {
     description: string = '';
     price: string = '';
     sponsor: string = '';
-    // Inicializa otros campos aquí
+ 
 //  };
 
   constructor(private http: HttpClient) { }
@@ -35,6 +35,7 @@ export class RegistroComponent {
     }
   }
   submitForm() {
+
     this.formData.append('name', this.name); 
     this.formData.append('phone', this.phone);
     this.formData.append('indications', this.indications);
@@ -47,7 +48,7 @@ export class RegistroComponent {
 
     this.http.post('https://api-activity-dmn.onrender.com/activities/', this.formData)
       .subscribe((response) => {
-        // Realizar acciones después de enviar los datos, como redireccionar o mostrar un mensaje de éxito.
+        
       });
   }
 }

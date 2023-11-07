@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
-import { HttpClient } from '@angular/common/http';
+import { Component,OnInit } from "@angular/core";
+import { ApiActivity } from '../services/actividades_s/actividades.service';
+
 
 @Component({
     selector: 'app-dashboard ',
@@ -7,6 +8,15 @@ import { HttpClient } from '@angular/common/http';
     styleUrls: ['./dashboard.component.css']
 })
 
-export class DashboardComponent {
-    
+export class DashboardComponent implements OnInit {
+    datos: any;
+
+    constructor(private apiService: ApiActivity) {}
+
+    ngOnInit() {
+      this.apiService.getDatos().subscribe(data => {
+        this.datos = data;
+      });
+  }
+
 }
