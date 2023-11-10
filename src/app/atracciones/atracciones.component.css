@@ -9,7 +9,13 @@
   margin-bottom: 60px;
   margin: 2vh 0;
 }
-
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  text-align: center;
+}
 @media (max-width: 500px) {
   .title-actividades {
       font-size: 10vw;
