@@ -1,5 +1,55 @@
 
-
 <app-navbar></app-navbar>
-<div id="map"></div>
+<div class="mapa">
+<google-map width="900" height="400" [center]="position">
+    <map-marker 
+    [position]="position">
+    </map-marker>
+</google-map>
+</div>
+<br>
+<h2>Comienza la aventura</h2>
+<p>¡Bienvenidos a Medellín, la Ciudad de la Eterna Primavera! Aquí, iniciarán una emocionante aventura llena de cultura,
+naturaleza y hospitalidad. Descubran la belleza de nuestras montañas, la calidez de nuestra gente y la riqueza de
+nuestra historia. ¡Prepárense para vivir momentos inolvidables en este encantador rincón de Colombia!</p>
 
+<div class="transportes">
+    <br>
+<h3>¿Como llego si estoy en el aeropuerto?</h3>
+<div class="section">
+    <div class="text">
+        <h2>Combuses S.A.</h2>
+        <p>Combuses S.A. es una empresa de transporte que se especializa en ofrecer rutas económicas desde el aeropuerto hacia
+        Medellín. Nuestro compromiso es brindar un viaje seguro y confortable a precios accesibles. Confía en Combuses S.A. para
+        tu traslado a la vibrante ciudad de Medellín y comienza tu aventura de manera conveniente y asequible.</p>
+    </div>
+    <div class="image">
+        <img src="../../assets/imagenes/Mapa/combuses.jpg" alt="Imagen 1">
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="image">
+        <img src="../../assets/imagenes/Mapa/Aeropuerto-civica.jpg" alt="Imagen 2">
+    </div>
+    <div class="text">
+        <h2>Metro de medellin</h2>
+        <p>El Metro de Medellín, una extraordinaria red de transporte público, ha lanzado recientemente una ruta desde el aeropuerto
+        hasta el corazón de la ciudad. Esta opción económica ofrece a los viajeros una forma rápida y asequible de llegar a
+        Medellín. El compromiso del Metro es proporcionar un servicio de calidad para satisfacer las necesidades de los
+        pasajeros, haciendo que la movilidad en la ciudad sea más accesible que nunca.</p>
+    </div>
+</div>
+<div class="section">
+    <div class="text">
+        <h2>Taxi, Uber</h2>
+        <p>Si prefieres opciones de transporte más privadas, los servicios de taxi y Uber están disponibles en Medellín, aunque
+        tienden a ser opciones más costosas en comparación con las rutas económicas ofrecidas por Combuses S.A. y el Metro.
+        Aunque son convenientes, considera tus preferencias de presupuesto al elegir la forma de desplazarte por la ciudad.</p>
+    </div>
+    <div class="image">
+        <img src="../../assets/imagenes/Mapa/taxi_uber.jpeg" alt="Imagen 1">
+    </div>
+</div>
+</div>

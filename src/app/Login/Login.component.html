@@ -17,24 +17,25 @@
                 <span> o continuar con Email </span>
                 <div class="line"></div>
             </div>
-            <div class="inputs-container">
-                <label for="username"> Nombre de Usuario </label>
-                <input type="text" name="username">
+            <form (ngSubmit)="submitForm()" #myForm="ngForm">
+                <div class="inputs-container">
+                    <label for="username"> Nombre de Usuario </label>
+                    <input type="text" name="username" [(ngModel)]="username" required>
 
-                <label for="password"> contraseña </label>
-                <input type="password" name="password">
-
+                    <label for="password"> contraseña </label>
+                    <input type="password" name="password" [(ngModel)]="password" required>
+                    
                     <div>
                         <input type="checkbox" name="" id=""> Mantenerme conectado
                     </div>
                     <div class="right">
                         <a href="#"> Olvide mi contraseña </a>
                     </div>
-                <div class="buttons-container">
+                    <div class="buttons-container">
                         <input type="submit" class="boton" value="Iniciar Sesion">
+                    </div>        
                 </div>
-
-            </div>
+            </form>
             <div class="register-container">
                 <span> Si no tienes una cuenta, </span> <a href="formulario-registro"> Registrate! </a>
             </div>

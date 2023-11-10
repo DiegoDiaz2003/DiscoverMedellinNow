@@ -15,8 +15,12 @@ import { FormsModule } from '@angular/forms';
 import { BandejaPaisaComponent } from './restaurante/bandeja-paisa/bandeja-paisa.component';
 import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 import { DashboardComponent  } from './dashboard/dashboard.component';
-
 import { ApiActivity } from "./services/actividades_s/actividades.service";
+import { GoogleMapsModule } from '@angular/google-maps';
+
+
+
+
 
 
 
@@ -39,9 +43,11 @@ import { ApiActivity } from "./services/actividades_s/actividades.service";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
+    FormsModule,        
+    GoogleMapsModule,
   ],
   providers: [ApiActivity],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

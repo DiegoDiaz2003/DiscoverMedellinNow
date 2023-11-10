@@ -1,6 +1,6 @@
-import { Component, OnInit } from "@angular/core";
-import * as L from 'leaflet';
+import { Component, OnInit, AfterViewInit } from "@angular/core";
 
+declare var google: any;
 
 
 @Component({
@@ -9,22 +9,12 @@ import * as L from 'leaflet';
     styleUrls: ['./mapa.component.css']
 })
 
-export class MapaComponent implements OnInit{
-    map?: L.Map;
-
-    constructor() {
-    // Inicializa el mapa aquí
+export class MapaComponent {
+  position={
+    lat:6.2443382,
+    lng:-75.573553,
   }
 
-  ngOnInit() {
-    if (this.map) {
-      this.map = L.map('map').setView([37.7749, -122.4194], 12);
+  
 
-      // Agrega la capa de MapQuest
-      L.tileLayer('https://www.mapquestapi.com/staticmap/v5/map?key=5LcgzHtXYEXdjAvJZRNILqMz37ECpY4W&center={center}&zoom={zoom}', {
-        maxZoom: 18,
-        attribution: 'MapQuest'
-      }).addTo(this.map);
-    }
-  }
 }
