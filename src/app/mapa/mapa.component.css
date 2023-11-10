@@ -45,6 +45,54 @@ p{
     padding: 10px;
     border-radius: 10px;
 }
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.sub-container-buscar {
+    padding: 0px;
+    position: relative;
+}
+
+.boton {
+    text-decoration-line: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.buscar input {
+    width: 240px;
+    height: 55px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+
+.btn_buscar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #212f3d;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn_buscar:hover {
+    background-color: #4E6B88;
+    font-size: 22px;
+}
 
 /* Para cambiar el orden en pantallas más pequeñas (móviles) */
 @media (max-width: 768px) {

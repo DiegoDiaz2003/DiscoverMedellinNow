@@ -15,6 +15,4 @@ export class MapaComponent {
     lng:-75.573553,
   }
 
-  
-
 }
