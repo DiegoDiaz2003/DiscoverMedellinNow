@@ -1,0 +1,8 @@
+<h1>Perfil</h1>
+<div *ngIf="profileData">
+    <h2>Perfil de Usuario</h2>
+    <p>Nombre de usuario: {{ profileData.name }}</p>
+    <p>Correo electrónico: {{ profileData.email }}</p>
+    <!-- Otros campos del perfil aquí -->
+</div>
+<a class="boton" routerLink="/dashboard">Dashboard</a>

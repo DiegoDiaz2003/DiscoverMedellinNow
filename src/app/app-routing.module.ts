@@ -10,6 +10,9 @@ import { LoginComponent } from './Login/Login.component';
 import { BandejaPaisaComponent } from './restaurante/bandeja-paisa/bandeja-paisa.component';
 import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { PerfilComponent  } from './perfil/perfil.component';
+import { AcercadeComponent  } from './acercade/acercade.component';
+
 
 
 
@@ -24,7 +27,9 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'bandeja-paisa', component: BandejaPaisaComponent},
   {path: 'formulario-registro', component: FormularioRegistroComponent},
-  {path: 'dashboard', component: DashboardComponent}
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'perfil', component: PerfilComponent},
+  {path: 'acercaDe', component: AcercadeComponent},
 ];
 
 @NgModule({

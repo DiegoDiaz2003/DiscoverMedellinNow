@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { BandejaPaisaComponent } from './restaurante/bandeja-paisa/bandeja-paisa.component';
 import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 import { DashboardComponent  } from './dashboard/dashboard.component';
+import { PerfilComponent  } from './perfil/perfil.component';
+import { AcercadeComponent  } from './acercade/acercade.component';
 import { ApiActivity } from "./services/actividades_s/actividades.service";
 import { GoogleMapsModule } from '@angular/google-maps';
 
@@ -38,6 +40,8 @@ import { GoogleMapsModule } from '@angular/google-maps';
     BandejaPaisaComponent,
     FormularioRegistroComponent,
     DashboardComponent,
+    PerfilComponent,
+    AcercadeComponent,
   ],
   imports: [
     BrowserModule,

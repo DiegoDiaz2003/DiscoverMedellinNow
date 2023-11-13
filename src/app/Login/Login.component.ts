@@ -22,7 +22,7 @@ export class LoginComponent {
         formData.append('contrasenia', this.password);
 
         this.http.post('http://127.0.0.1:8000/login/', formData).subscribe((response) => {
-            this.router.navigate(['/dashboard']);  
+            this.router.navigate(['/perfil']);  
 
         });
     }
