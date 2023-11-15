@@ -1,18 +1,18 @@
 body{
     background-color: #749fbc;
-    height: 87.6vh;
+    height: 100vh;
     overflow: hidden;
    
 }
 h1{
     text-align: end;
-    margin-right: 180px;
+    margin-right: 140px;
     color: #212f3d;
 }
 .formulario_actividades{
     margin: 40px;
-    margin-left: 700px;
-    margin-top: 5px;
+    margin-left: 650px;
+    margin-top: 3px;
     width: 700px;
     height: 480px;
 }
@@ -56,6 +56,7 @@ input, textarea{
     border-radius: 50%;
     width: 480px;
     height: 480px;
+    
 }
 #circle2 {
     position: relative;
@@ -70,7 +71,6 @@ input, textarea{
     position: relative;
     top: -1430px;
     left: 120px;
-
     width: 420px;
     height: 420px;
     margin: 10px;
@@ -82,4 +82,88 @@ input, textarea{
     width: 400px;
     height: 400px;
     border-radius: 50%;
+}
+@media (max-width: 850px) {
+    body{
+        height: 230vh;
+    }
+    .formulario_actividades {
+        margin-left: 115px;
+        margin-top: 500px;
+    }
+    .form-row {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        width: 100%; 
+        margin-right: 0px; 
+    }
+    input,textarea{
+        width: 550px;
+    }
+    .boton{
+        margin-left: 200px;
+    }
+    .circulo-decoracion {
+        margin-left: 80px;
+        margin-top: -480px;
+    }
+    h1{
+        margin-right: 150px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    body {
+        height: 210vh;
+    }
+
+    .formulario_actividades {
+        margin-left: 10px;
+        margin-top: 400px;
+    }
+
+    .form-row {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        width: 100%;
+        margin-right: 0px;
+    }
+    input,
+    textarea {
+        width: 320px;
+    }
+    .boton {
+        margin-left: 90px;
+    }
+    .circulo-decoracion{
+        margin-left: -92px;
+        margin-top: -380px;
+    }
+    #circle{
+        width: 360px;
+        height: 360px;
+    }
+    #circle2 {
+        width: 330px;
+        height: 330px;
+        top: -865px;
+    }
+    .decoracion{
+        width: 300px;
+        height: 300px;
+        top: -1190px;
+    }
+    .decoracion img{
+        width: 280px;
+        height: 280px;
+    }
+    h1 {
+        margin-right: 1px;
+        text-align: center;
+    }
 }
