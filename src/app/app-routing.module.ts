@@ -13,9 +13,6 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 import { PerfilComponent  } from './perfil/perfil.component';
 import { AcercadeComponent  } from './acercade/acercade.component';
 
-
-
-
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full' }, 
   {path: 'inicio', component: InicioComponent},
