@@ -21,6 +21,8 @@ import { ApiActivity } from "./services/actividades_s/actividades.service";
 import { GoogleMapsModule } from '@angular/google-maps';
 import { PresentacionComponent  } from './presentacion/presentacion.component';
 
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 
 
 
@@ -52,8 +54,10 @@ import { PresentacionComponent  } from './presentacion/presentacion.component';
     HttpClientModule,
     FormsModule,        
     GoogleMapsModule,
+    ModalModule.forRoot(),
   ],
   providers: [ApiActivity],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

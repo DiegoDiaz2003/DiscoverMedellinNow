@@ -10,6 +10,8 @@ import { ApiActivity } from '../services/actividades_s/actividades.service';
 
 export class DashboardComponent implements OnInit {
     datos: any;
+    eliminarConfirmado: boolean = false; 
+
 
     constructor(private apiService: ApiActivity) {}
 
@@ -17,6 +19,9 @@ export class DashboardComponent implements OnInit {
       this.apiService.getDatos().subscribe(data => {
         this.datos = data;
       });
+  }
+  confirmarEliminar() {
+    console.log('Elemento eliminado');
   }
 
 }

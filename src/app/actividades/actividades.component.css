@@ -173,8 +173,6 @@ section{
 .control-n {
    margin-right: 130px;
 }
-
-
 @media (max-width: 768px) {
   .carousel {
     margin-left: 30px;
