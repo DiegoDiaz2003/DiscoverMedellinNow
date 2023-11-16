@@ -11,6 +11,7 @@ import { ApiActivity } from '../services/actividades_s/actividades.service';
 
 export class ActividadesComponent implements OnInit {
     datos: any;
+
     //modalService: BsModalService = {} as BsModalService;
 
     constructor(private apiService: ApiActivity, private modalService: BsModalService) {}
@@ -32,5 +33,4 @@ export class ActividadesComponent implements OnInit {
 
     this.modalService.show(PresentacionComponent, { initialState });
   }
-
 }

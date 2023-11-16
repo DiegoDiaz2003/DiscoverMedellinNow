@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient  } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+
+
 
 
 
@@ -20,5 +25,16 @@ export class ApiActivity {
     // Realiza una solicitud POST para crear una nueva actividad en la base de datos
     return this.http.post(`${this.apiUrl}/activities/`, formData);
   }
+eliminarDato(id: number): Observable<any> {
+  const url = `${this.apiUrl}/actividades/${id}`;
+  return this.http.delete(url).pipe(
+    catchError((error: any) => {
+      console.error('Error al eliminar elemento', error);
+      return throwError(error); // Puedes decidir si quieres relanzar el error o manejarlo de otra manera
+    })
+  );
+}
+
+
 }
 
