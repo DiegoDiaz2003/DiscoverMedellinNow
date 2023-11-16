@@ -1,5 +1,6 @@
  img {
      max-width: 100%;
+     border-radius: 10%;
  }
 
  main {
@@ -91,7 +92,7 @@
 
  .contenedor-redes-botones a:link,
  .contenedor-redes-botones a:visited {
-     color: #666666;
+     color: #212f3d;
      font-size: 15px;
  }
 
