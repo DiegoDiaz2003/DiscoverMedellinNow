@@ -13,7 +13,6 @@ main {
   width: 100%;
 }
 
-
 .containerLeft {
   border-radius: 5%;
   width: 30%;
@@ -109,7 +108,7 @@ main {
   main {
     flex-direction: column;
     gap: 5vh;
-    margin-top: 50%;
+    margin-top: 10%;
   }
 
   .containerLeft {
@@ -178,7 +177,6 @@ main {
 
   .containerRight .cartas {
     grid-template-columns: 1fr;
-    display: none;
     gap: 2% 1%;
     
   }

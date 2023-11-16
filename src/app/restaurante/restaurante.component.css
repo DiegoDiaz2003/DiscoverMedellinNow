@@ -16,7 +16,6 @@
   }
 }
 
-
 .carousel {
     padding-top: 10vh;
 }
@@ -32,6 +31,7 @@ section{
   justify-content: center;
   align-items: center;
   padding-top: 5vh;
+  gap: 2vh;
 }
 
 .containerIndividual{
@@ -57,7 +57,7 @@ section{
 }
 
 .buscar input {
-  width: 240px;
+  width: 100%;
   height: 55px;
   padding: 0 20px;
   font-size: 18px;
@@ -116,7 +116,38 @@ section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 14px;
+  padding: 4% 1%;
+  justify-content: center;
+}
+
+@media (max-width: 1250px) {
+  .card-content h2 {
+      font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card-content h2 {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .card-content h2 {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-content h2 {
+      font-size: 5vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-content h2 {
+      font-size: 10vw;
+  }
 }
 
 .image-content {
@@ -135,22 +166,6 @@ section{
   border-radius: 25px 25px 0 25px;
 }
 
-.overlay::before,
-.overlay::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #212f3d;
-}
-
-.overlay::after {
-  border-radius: 0 25px 0 0;
-  background-color: #fff;
-}
-
 .card-image {
   position: relative;
   height: 150px;
@@ -160,18 +175,34 @@ section{
   padding: 3px;
 }
 
-.card-image .card-img {
+.card-img {
   height: 100%;
   width: 100%;
+  max-height: 500px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #212f3d;
+}
+
+@media (max-width: 200px) {
+  .card-image  {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 200px) {
+  .card-image  {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 .name {
   font-size: 18px;
   font-weight: 500;
   color: #333;
+  text-align: center;
 }
 
 .description {
@@ -198,15 +229,11 @@ section{
   }
   h1 {
     font-size: 30px;
-    margin-left: 65px;
   }
   h2 {
     font-size: 28px;
-    margin-left: 65px;
   }
-  .buscar {
-    margin-left: -15%;
-  }
+
   .tarjetas .card {
     margin-left: -20px;
     max-width: 100%;
