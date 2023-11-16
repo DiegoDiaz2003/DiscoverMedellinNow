@@ -229,8 +229,10 @@ main .sobre-nosotros {
     .servicio-ind {
         width: 60%;
     }
+    .servicio-ind img {
+        width: 200px;
+    }
 }
-
 @media (max-width: 400px) {
     .servicio-ind h3,
     .servicio-ind p {
@@ -240,8 +242,10 @@ main .sobre-nosotros {
     .servicio-ind {
         width: 70%;
     }
+    .servicio-ind img {
+        width: 170px;
+    }
 }
-
 @media (max-width: 300px) {
     .servicio-ind h3,
     .servicio-ind p {
@@ -261,37 +265,13 @@ main .sobre-nosotros {
     .servicio-ind p {
         font-size: 8vw;
     }
-}
-
-.servicio-ind img {
-    width: 100%;
-    max-width: 200px;
-}
-
-
-
-@media (max-width: 600px) {
-    .servicio-ind img {
-        width: 200px;
-    }
-}
-
-@media (max-width: 400px) {
-    .servicio-ind img {
-        width: 170px;
-    }
-}
-
-@media (max-width: 200px) {
     .servicio-ind img {
         width: 130px;
     }
 }
-
-@media (max-width: 100px) {
-    .servicio-ind img {
-        width: 50px;
-    }
+.servicio-ind img {
+    width: 100%;
+    max-width: 200px;
 }
 
 @media screen and (max-width:900px) {
