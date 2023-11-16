@@ -14,17 +14,23 @@
                 <h5 class="card-title">{{ dato.name | uppercase }}</h5>
                 <p class="card-text">{{ dato.description }}</p>
                 <a class="boton" href=""><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
-                <a class="boton" (click)="eliminarConfirmado = !eliminarConfirmado" style="background-color: red; border: 1px solid red;"><i class="fa-solid fa-trash" style="color: #ffffff;"></i></a>
+                <a class="boton" 
+                    style="background-color: red; border: 1px solid red;">
+                    <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+                </a>
                 <br><br>
-                <div *ngIf="eliminarConfirmado">
+               <!-- <div *ngIf="eliminarConfirmado && elementoAEliminarId === dato.id">
                     ¿Estás seguro de que deseas eliminar este elemento?
-                    <button class="boton" style="background-color: red; border: red;" (click)="confirmarEliminar()">Eliminar</button>
-                    <button class="boton" (click)="eliminarConfirmado = !eliminarConfirmado">Cancelar</button>
+                    <button class="boton" style="background-color: red; border: red;"
+                        (click)="realizarEliminacion(dato.id)">Eliminar</button>
+                    <button class="boton" (click)="cancelarEliminar()">Cancelar</button>
                 </div>
+            -->
             </div>
         </div>
     </div>
 </div>
+
 <br>
 <h1>Atracciones</h1>
 <hr>
