@@ -13,7 +13,7 @@ export class AcercadeComponent implements OnInit {
     constructor(private http: HttpClient) {}
 
     ngOnInit(): void {
-      this.http.get('/src/app/componentes/restaurante').subscribe((response) => {
+      this.http.get('/src/app/componentes/acercade').subscribe((response) => {
         this.data = response;
       });
     }
