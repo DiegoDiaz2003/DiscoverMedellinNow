@@ -12,6 +12,8 @@ import { FormularioRegistroComponent } from './formulario-registro/formulario-re
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { PerfilComponent  } from './perfil/perfil.component';
 import { AcercadeComponent  } from './acercade/acercade.component';
+import { PresentacionComponent  } from './presentacion/presentacion.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full' }, 
@@ -27,6 +29,8 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'perfil', component: PerfilComponent},
   {path: 'acercaDe', component: AcercadeComponent},
+  {path: 'presentacion', component: PresentacionComponent},
+
 ];
 
 @NgModule({

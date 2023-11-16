@@ -19,6 +19,8 @@ import { PerfilComponent  } from './perfil/perfil.component';
 import { AcercadeComponent  } from './acercade/acercade.component';
 import { ApiActivity } from "./services/actividades_s/actividades.service";
 import { GoogleMapsModule } from '@angular/google-maps';
+import { PresentacionComponent  } from './presentacion/presentacion.component';
+
 
 
 
@@ -42,6 +44,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     DashboardComponent,
     PerfilComponent,
     AcercadeComponent,
+    PresentacionComponent,
   ],
   imports: [
     BrowserModule,
