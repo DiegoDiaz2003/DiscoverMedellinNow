@@ -456,29 +456,4 @@ main .sobre-nosotros{
         height: 90px;
     }
 
-    /* Footer */
-
-    .contenedor-footer{
-        flex-direction: column;
-        border: none;
-    }
-
-    .content-foo{
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .content-foo h4{
-        border: none;
-    }
-
-    .content-foo p{
-        color: #ccc;
-        border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
-    }
-
-    .titulo-final{
-        font-size: 20px;
-    }
 }
